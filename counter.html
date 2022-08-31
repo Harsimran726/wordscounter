@@ -1,29 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+  
     
     <title>Word Counter For Everyone </title>
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-png" href="static\wordscounter small.png">
-    <meta name="description" content="Wordscounter.online is an online word counter tool & text counter web application that counts the number of words, characters, and sentences in a sentence for free with a special AI feature. We are a free online tool that helps you count words, characters, and sentences with our AI feature. To get started enter your text in the box above and click Count Words!"> 
+    <meta name="description" content="Wordscounter.online is an online word counter tool & text counter web application that counts the number of words, characters, and sentences in a sentence for free with a special AI feature. We are a free online tool that helps you count words, characters, and sentences with our AI feature. To get started enter your text in the box above and click Count Words!">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7505292509269780"
-     crossorigin="anonymous"></script>
-     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-78LTP9K26Y"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-78LTP9K26Y');
-</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7505292509269780"
+    crossorigin="anonymous"></script>
     <style>
         body {
             background-color: whitesmoke;
             scroll-behavior: smooth;
+            
         }
         nav {
             width: 1349px;
@@ -40,8 +33,16 @@
             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-style:normal;
             color: cyan;
-
+            cursor: pointer;
         }
+        nav h1:hover{
+            color: rgb(0, 255, 242);
+            transition: all 1s ease-in;
+            text-shadow: 0px 7px 12px black;
+            transform: translateY(-3px);
+            
+        }
+       
         nav li {
             font-size: 25px;
             background-color: transparent;
@@ -56,6 +57,49 @@
         nav li a {
             text-decoration: none;
             color: whitesmoke;
+        }
+        div.emails {
+            width: 502px;
+    background-color: aqua;
+    height: 100px;
+    align-content: center;
+    margin-left: 411px;
+    margin-top: 41px;
+    align-items: center;
+
+        }
+        div.emails form {
+            padding: 40px;
+        }
+        div.emails form textarea {
+            color: #7b2123;
+            width: 275px;
+            height: 22px;
+            font-size: 15px;
+            font-weight: 500;
+            outline: none;
+            border-radius: 2px;
+            background-color: aqua;
+            border: none;
+            margin: -10px;
+        }
+        div.emails form button {
+            width: 101px;
+            background-color: #7b2123;
+            color: cyan;
+            border: none;
+            font-weight: 700;
+            border-radius: 2px;
+            margin-left: 47px;
+            outline: none;
+            height: 28px;
+        }
+        div.emails form button:hover {
+            color: aqua;
+            background-color: black;
+            transition: all 1s ease-in;
+            box-shadow: 0px 2px 10px -1px rgb(10, 10, 10);
+            transform: translateY(-2px);
         }
         section.count {
             background-color: transparent;
@@ -75,30 +119,31 @@
             height: 351px;
             margin-bottom: -32px;
             outline: none;
+            background-color: aliceblue;
+            width: 800px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-weight: bolder;
             font-style: oblique;
             font-size: 15px;
-            width: 800px;
-            background-color: aliceblue;
             border: solid 2px black;
         }
         section.count div h2 {
             font-family: monospace;
             font-style: oblique;
             padding: 10px;
-            background-color: #6f2728;
-            color: aqua;
             font-weight: 600;
-            font-size: 22px;        
+            color:aqua;
+            background-color: #6f2728;
+            font-size: 22px; 
+            animation: all 4s infinite ease;       
         }
-
         section.count div h2:hover {
-            background-color: rgb(116, 207, 207);
+            background-color: aqua;
             color: #6f2728;
-            animation: all 1s ease-out;
+            transition: all 1s ease-in;
+            box-shadow: 0px 2px 10px -1px rgb(10, 10, 10);
+            transform: translateY(-5px);
         }
-
 
         section.count button {
             font-style: oblique;
@@ -115,17 +160,21 @@
             background-color: transparent;
         }
         section.count button:hover {
-            animation: all 3s ease-in-out;
+            animation: all 1s ease-in-out;
             background-color: #6f2728;
             color: aquamarine;
             font-weight: bolder;
-            box-shadow:  0px 2px 0px 2px black;
+            
+            transition: all 1s ease-in;
+            box-shadow: 0px 2px 10px -1px rgb(10, 10, 10);
+            transform: translateY(-4px);
         
         }
         
         section.count form {
             width: 800px
         }
+
         div.ads {
             background-color: transparent;
             width: 235px;
@@ -134,12 +183,13 @@
             margin-top: 55px;
         }
         section.reason {
-            height: 800px;
-            margin-left: 256px;
+            height: 700px;
+            margin-left: 0px;
             margin-top: 203px;
             width: 1340px;
             background-color: #6f2728;
         }
+        
         section.reason h2 {
             color: aqua;
             font-size: 28px;
@@ -159,7 +209,6 @@
             padding-left: 33px;
             padding-right: 100px;
         }
-       
         footer {
             height: 150px;
             width: 1340px;
@@ -182,177 +231,221 @@
             text-decoration: none;
             color: #6f2728;
         }
-         /* mobile version responsive */
 
 
-         @media (max-width: 575px) {
+        /* mobile version responsive */
+        /* mobile version responsive */
+        /* mobile version responsive */
+        /* mobile version responsive */
 
-           
+
+        @media (max-width: 575px) {
+
             body {
-                background-color: whitesmoke;
-                scroll-behavior: smooth;
-                
-            }
-            nav {
-                width: 583px;
-                height: 60px;
-                background-color: #500e0edb;
-                margin-top: -20px;
-                margin-left: -8px;
-                color: white;
-                
-            }
-            nav h1 {
-                font-size: 20px;
-                margin: -47px 102px;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                font-style: normal;
-                color: cyan;
-    
-    
-            }
-            nav li {
-                font-size: 21px;
-        background-color: transparent;
-        list-style: none;
-        margin: 25px 40px;
-        text-align: center;
-        height: 30px;
-        width: 100px;
-        float: right;
-                
-            }
-            nav li a {
-                text-decoration: none;
-                color: whitesmoke;
-            }
-            section.count {
+            background-color: whitesmoke;
+            scroll-behavior: smooth;
+            
+        }
+        nav h1:hover{
+            color: rgb(0, 255, 242);
+            transition: all 1s ease-in;
+            text-shadow: 0px 7px 12px black;
+            transform: translateY(-3px);
+            
+        }
+        nav {
+            width: 583px;
+            height: 60px;
+            background-color: #500e0edb;
+            margin-top: -20px;
+            margin-left: -8px;
+            color: white;
+            
+        }
+        nav h1 {
+            font-size: 30px;
+            margin: -53px 141px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style:normal;
+            color: cyan;
+            cursor: pointer;
+        }
+        nav h1:hover{
+            color: #6f2728;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: aqua;
+           
+
+        }
+        nav li {
+            font-size: 21px;
+    background-color: transparent;
+    list-style: none;
+    margin: 25px 40px;
+    text-align: center;
+    height: 30px;
+    width: 100px;
+    float: right;
+            
+        }
+        nav li a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+        section.count {
+            background-color: transparent;
+    width: 400px;
+    height: 600px;
+    margin-top: 213px;
+    margin-left: 82px;
+    display: block;
+
+        }
+        section.count div {
+            display: inline;
+            
+            
+        }
+        section.count div h2:hover {
+            background-color: aqua;
+            color: #6f2728;
+            transition: all 1s ease-in;
+            box-shadow: 0px 2px 10px -1px rgb(10, 10, 10);
+            transform: translateY(-5px);
+        }
+        section.count  textarea {
+            height: 234px;
+            margin-bottom: -32px;
+            outline: none;
+            background-color: aliceblue;
+            width: 400px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+            font-style: oblique;
+            font-size: 15px;
+            border: solid 2px black;
+        
+        }
+        section.count div h2 {
+            font-family: monospace;
+    font-style: oblique;
+    padding: 10px;
+    font-weight: 600;
+    background-color: #6f2728;
+    color: aqua;
+    font-size: 18px; 
+    animation: all 4s infinite ease-in;      
+        }
+        section.count button {
+            font-style: oblique;
+            width: 162px;
+            height: 47px;
+            text-align: center;
+            justify-content: center;
+            margin: 60px 125px;
+            font-weight: bolder;
+            font-size: 20px;
+            border-radius: 2px;
+            border: solid 2px black;
+            outline: none;
+            background-color: transparent;
+        }
+        @keyframes all {
+            0% {
                 background-color: transparent;
-        width: 400px;
-        height: 600px;
-        margin-top: 213px;
-        margin-left: 82px;
-        display: block;
-    
-            }
-            section.count div {
-                display: inline;
-                
-                
-            }
-            section.count  textarea {
-                height: 234px;
-                margin-bottom: -32px;
-                outline: none;
-                background-color: aliceblue;
-                width: 400px;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                font-weight: bolder;
-                font-style: oblique;
-                font-size: 15px;
-                border: solid 2px black;
-            
-            }
-            section.count div h2 {
-                font-family: monospace;
-        font-style: oblique;
-        padding: 10px;
-        font-weight: 600;
-        background-color: #6f2728;
-        color: aqua;
-        font-size: 18px;       
-            }
-            section.count button {
-                font-style: oblique;
-                width: 162px;
-                height: 47px;
-                text-align: center;
-                justify-content: center;
-                margin: 60px 125px;
-                font-weight: bolder;
-                font-size: 20px;
-                border-radius: 2px;
-                border: solid 2px black;
-                outline: none;
-                background-color: transparent;
-            }
-            section.count button:hover {
-                animation: all 1s ease-in-out;
-                background-color: #6f2728;
-                color: aquamarine;
-                font-weight: bolder;
-                box-shadow:  0px 2px 0px 2px black;
-            
-            }
-            
-            section.count form {
-                width: 400px
-            }
-    
-            section.count div h2:hover {
-                background-color: rgb(116, 207, 207);
-                color: #6f2728;
-                animation: all 1s ease-out;
-            }
-            div.ads {
-                background-color: transparent;
-        width: 561px;
-        height: 153px;
-        margin-top: -11px;
-    
-            }
-            section.reason {
-                height: 1067px;
-                width: 583px;
-                margin-left: -9px;
-                margin-top: 203px;
-                background-color: #6f2728;
-            }
-            
-            section.reason h2 {
                 color: aqua;
-                font-size: 28px;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                font-style: oblique;
-                font-weight: bolder;
-                padding-left: 33px;
-                padding-top: 34px;
-    
             }
-            section.reason h3 {
-                color: whitesmoke;
-                font-size: 15px;
-                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-                font-style: oblique;
-                font-weight: bolder;
-                padding-left: 33px;
-                padding-right: 100px;
-            }
-            footer {
-                height: 150px;
-                margin-left: -8px;
-                width: 583px;
-                background-color: aquamarine;
-                text-align: center;
-            }
-            footer ul {
-                padding-top: 30px;
-            }
-            footer ul li {
-                
-                list-style: none;
-                color: #6f2728;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                font-style: oblique;
-                font-weight: bolder;
-    
-            }
-            footer ul li a {
-                text-decoration: none;
+            50% {
+                background-color: aqua;
                 color: #6f2728;
             }
-    }
-      /* 414px */
+            100% {
+                background-color: transparent;
+                color: aqua;
+            }
+            
+        }
+        section.count form {
+            width: 400px
+        }
+        section.count button:hover {
+            animation: all 1s ease-in-out;
+            background-color: #6f2728;
+            color: aquamarine;
+            font-weight: bolder;
+            
+            transition: all 1s ease-in;
+            box-shadow: 0px 2px 10px -1px rgb(10, 10, 10);
+            transform: translateY(-4px);
+        
+        }
+
+        section.count div h2:hover {
+            background-color: rgb(116, 207, 207);
+            color: #6f2728;
+            animation: all 1s ease-out;
+        }
+        div.ads {
+            background-color: transparent;
+    width: 561px;
+    height: 153px;
+    margin-top: -11px;
+
+        }
+        section.reason {
+            height: 1067px;
+            width: 583px;
+            margin-left: -9px;
+            margin-top: 203px;
+            background-color: #6f2728;
+        }
+        
+        section.reason h2 {
+            color: aqua;
+            font-size: 28px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: oblique;
+            font-weight: bolder;
+            padding-left: 33px;
+            padding-top: 34px;
+
+        }
+        section.reason h3 {
+            color: whitesmoke;
+            font-size: 15px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+            font-style: oblique;
+            font-weight: bolder;
+            padding-left: 33px;
+            padding-right: 100px;
+        }
+        footer {
+            height: 150px;
+            margin-left: -8px;
+            width: 583px;
+            background-color: aquamarine;
+            text-align: center;
+        }
+        footer ul {
+            padding-top: 30px;
+        }
+        footer ul li {
+            
+            list-style: none;
+            color: #6f2728;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: oblique;
+            font-weight: bolder;
+
+        }
+        footer ul li a {
+            text-decoration: none;
+            color: #6f2728;
+        }
+        }
+
+
+        /* 414px */
         /* 414px */
         /* 414px */
         /* 414px */
@@ -375,13 +468,44 @@
             color: white;
             
         }
+        section.count button:hover {
+            animation: all 1s ease-in-out;
+            background-color: #6f2728;
+            color: aquamarine;
+            font-weight: bolder;
+            
+            transition: all 1s ease-in;
+            box-shadow: 0px 2px 10px -1px rgb(10, 10, 10);
+            transform: translateY(-4px);
+        
+        }
+        section.count div h2:hover {
+            background-color: aqua;
+            color: #6f2728;
+            transition: all 1s ease-in;
+            box-shadow: 0px 2px 10px -1px rgb(10, 10, 10);
+            transform: translateY(-5px);
+        }
+        nav h1:hover{
+            color: rgb(0, 255, 242);
+            transition: all 1s ease-in;
+            text-shadow: 0px 7px 12px black;
+            transform: translateY(-3px);
+            
+        }
         nav h1 {
             font-size: 15px;
-    margin: -44px 81px;
+    margin: -44px 84px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: normal;
     color: cyan;
-
+    cursor: pointer;
+        }
+        nav h1:hover{
+            color: #6f2728;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: aqua;
+           
 
         }
         nav li {
@@ -393,11 +517,49 @@
     height: 30px;
     width: 100px;
     float: right;
+
             
         }
         nav li a {
             text-decoration: none;
             color: whitesmoke;
+        }
+        div.emails {
+            width: 330px;
+            background-color: aqua;
+            height: 100px;
+            align-content: center;
+            margin-left: 47px;
+            margin-top: 41px;
+            align-items: center;
+        }
+        div.emails form {
+            padding: 0px;
+        }
+        div.emails form textarea {
+            color: #7b2123;
+            width: 173px;
+            height: 21px;
+            font-size: 15px;
+            font-weight: 500;
+            outline: none;
+            border-radius: 2px;
+            margin-top: 21px;
+            background-color: aqua;
+            border: none;
+            margin-left: 72px;
+        }
+        div.emails form button {
+            width: 101px;
+            background-color: #7b2123;
+            color: cyan;
+            border: none;
+            font-weight: 700;
+            border-radius: 2px;
+            margin-left: 105px;
+            margin-top: 10px;
+            outline: none;
+            height: 28px;
         }
         section.count {
             background-color: transparent;
@@ -433,6 +595,7 @@
     font-weight: 600;
     background-color: #6f2728;
     color: aqua;
+    animation: all 4s infinite ease-in;
     font-size: 18px;       
         }
         section.count button {
@@ -449,14 +612,7 @@
             outline: none;
             background-color: transparent;
         }
-        section.count button:hover {
-            animation: all 1s ease-in-out;
-            background-color: #6f2728;
-            color: aquamarine;
-            font-weight: bolder;
-            box-shadow:  0px 2px 0px 2px black;
-        
-        }
+      
         
         section.count form {
             width: 400px
@@ -532,24 +688,14 @@
 <body>
     <nav>
         <img src="static\wordscounter small.png" alt="" width="80px" height="80px"style="
-        margin: -7px 10px;">
+        margin: -8px 0px;">
         <h1>Words Counter For Everyone</h1>
         <li><a href="/admin">Admin</a></li>
     </nav>
     
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7505292509269780"
-        crossorigin="anonymous"></script>
-   <!-- ads1 h -->
-   <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-7505292509269780"
-        data-ad-slot="8997828828"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-   <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-   </script>
-  
+    
+        
+    
     <section class="count" id="counter">
         <div>
             <h2>Total Words:- {{total_words}}</h2>
@@ -557,43 +703,32 @@
             <h2>Total Letters (with Space):- {{length_of_space}}</h2>
             <h2>Total Sentences :- {{total_sentences}}</h2>
         </div> 
-        <form action="counter" method="GET"> {% csrf_token %}
+        <form action="counter" method="POST"> {% csrf_token %}
             <textarea name="Texttocount" id="text"  placeholder="Paste your text here"  >{{text}}</textarea>
             <button id="Counts" type="submit" href="">Count</button>
         </form>
-    
+       
     </section>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7505292509269780"
-    crossorigin="anonymous"></script>
-<!-- ads1 h -->
-<ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-7505292509269780"
-    data-ad-slot="8997828828"
-    data-ad-format="auto"
-    data-full-width-responsive="true"></ins>
-<script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+   
     <section class="reason">
         <h2 class="hea1">Why we?</h2>
-        <h3>Word Counter Online: Word Counter is one of the most important tools for SEO Writer,
+        <h3>Word Counter Online: Word Counter is one of the most important tools for SEO Wri
              Blog Creators, Students, Startups and Entrepreneurs to count words of their blog posts, 
               seo word counter, essay word counter, sentence counter, character counter. It helps you to 
                achieve your required word count, text content, words and characters. Now it's not necessary to depend 
              on any software or plugins. Simply copy and paste the content into our form, select word category 
-             and click calculate. View the word count results instantly. Our aim is to support everyone who needs
+             and click calculate. View the word count results instantly. Our aim is to support everyone who needs 
              it Most of the content creators are students, startups (ones with less budget)  and entrepreneurs.  who cannot afford the high cost of word counter software and services.</h3>
               <h2 class="mis">Our Mission</h2>
               <h3 class="miss">
-                To provide innovative technology solutions for the real world. 
+                To provide innovative technology solutions for the real world. <br>
                 <b>We make innovation available to all</b>
               </h3>
-            <h3>The word character counter is one of the most important tools for any writer, blogger or entrepreneur. It's a way to keep track of what you write and where it goes. But it can be hard to get  started—and expensive if you want to do it right. Now there's an easier way to get started  with wordscounter.online . We're here to help you out with our innovative technology!
+            <h3>The word character counter is one of the most important tools for any writer, blogger or  entrepreneur. It's a way to keep track of what you write and where it goes. But it can be hard to get  started—and expensive if you want to do it right. Now there's an easier way to get started  with wordscounter.online . We're here to help you out with our innovative technology!
 <br> <br> <br>
-                We provide a wide range of solutions for writers  and entrepreneurs who need an easy way to track their content online. Our word counters allow you to create your own customized tracking  system with just a few clicks. You can choose how many words per day or hour are included in  your count, and we'll even give you access to our database of content keywords so you can find new ideas and build on existing ones.
+                We provide a wide range of solutions for writers  and entrepreneurs who need an easy way to track  their content online. Our word counters allow you to create your own customized tracking  system with just a few clicks. You can choose how many words per day or hour are included in  your count, and we'll even give you access to our database of content keywords so you can  find new ideas and build on existing ones.
                 <br> <br> <br>
-                Our word counters also come with built-in analytics that show you exactly where your content is being seen—and what kind of impact it has on your readership (or potential customers). And  because our products are designed for every kind of user, from students writing papers in  class to entrepreneurs trying out new ventures at home, they're affordable even if you're just starting out!</h3>  
+                Our word counters also come with built-in analytics that show you exactly where your content is  being seen—and what kind of impact it has on your readership (or potential customers). And  because our products are designed for every kind of user, from students writing papers in  class to entrepreneurs trying out new ventures at home, they're affordable even if you're just  starting out!</h3>  
     </section>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7505292509269780"
      crossorigin="anonymous"></script>
@@ -608,7 +743,6 @@
     <footer>
         <ul>
             <li><a href=""><i class="fa-brands fa-instagram">Instagram:- _harsimran726__</i> </a></li>
-            <li><a href="">Mail</a></li>
             <li>CEO & Founder:- Harsimran Singh</li>
             <li>2022 Copyright</li>
         </ul>
